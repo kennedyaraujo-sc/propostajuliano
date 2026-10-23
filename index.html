@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proposta · Novo site Negrão Granato Advogados</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#070707;--navy2:#0E0E0E;--gold:#1CF05C;--green:#1CF05C;--green2:#5DFFB0;--red:#8a8a8a;
+--bg:#070707;--panel:#131313;--text:#EDEDED;--muted:#9a9a9a;--line:#262626;color-scheme:dark;
+--serif:"Sora","Segoe UI",system-ui,sans-serif;--sans:"Sora","Segoe UI",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:radial-gradient(520px 760px at 0 55%,#0b4a2440,transparent 70%),radial-gradient(520px 760px at 100% 25%,#0b4a2440,transparent 70%),var(--bg);color:var(--text);font:300 16px/1.7 var(--sans)}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.02em;line-height:1.15;margin:0}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:14px;max-width:20ch}
+p{margin:0 0 14px;max-width:62ch}
+section{padding:84px 0}
+.lead{color:var(--muted);font-size:18px}
+.hero{background:radial-gradient(700px 380px at 90% 0,#0d5a2b66 0,transparent 70%),radial-gradient(600px 400px at 0 100%,#0b4a2455,transparent 70%),var(--navy);color:#EDEDED;padding:96px 0 88px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:300;max-width:18ch}
+.hero p{color:#b5b5b5;font-size:19px;margin-top:22px;max-width:56ch}
+.for{display:inline-block;border:1px solid #1CF05C66;color:var(--gold);padding:6px 14px;border-radius:99px;font-size:14px;margin-bottom:26px}
+.btn{display:inline-block;background:linear-gradient(90deg,#00F03C,#5DFFB0);color:#04140a;font-weight:600;text-decoration:none;padding:16px 28px;border-radius:12px;border:0;font:700 17px var(--sans);cursor:pointer;box-shadow:0 0 28px #1cf05c55}
+.btn:hover{filter:brightness(1.1)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero .btn{margin-top:30px}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.col h3{font-size:22px;margin:14px 0 6px}
+.tag{display:inline-block;font-weight:600;font-size:14px;padding:4px 12px;border-radius:99px}
+.tag.a{background:#2e2e2e;color:#ddd}.tag.b{background:var(--green);color:#04140a}
+.browser{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--panel);box-shadow:0 14px 40px #000a}
+.bar{display:flex;gap:6px;align-items:center;padding:10px 14px;background:#1b1b1b}
+.bar i{width:10px;height:10px;border-radius:50%;background:#444}
+.bar span{margin-left:10px;font-size:13px;color:#bbb;background:#2a2a2a;border-radius:6px;padding:2px 12px}
+.win{height:540px;overflow:auto}
+.win img{width:100%}
+.hint{font-size:14px;color:var(--muted);margin:10px 0 0}
+.col.new .browser{border-color:var(--green);box-shadow:0 0 44px #1cf05c40}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.card .ic{font-size:28px;margin-bottom:10px}
+.bonus{background:radial-gradient(600px 400px at 100% 50%,#0d5a2b55,transparent 70%),var(--navy2);color:#EDEDED}
+.bonus .split{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center}
+.gift{display:inline-block;background:var(--gold);color:#04140a;font-weight:600;padding:6px 14px;border-radius:99px;font-size:15px;margin-bottom:18px}
+.bonus p{color:#b5b5b5}
+.bonus ul{padding:0;margin:18px 0 0;list-style:none}
+.bonus li{padding:9px 0 9px 34px;position:relative;border-bottom:1px solid #ffffff1f}
+.bonus li::before{content:"✓";position:absolute;left:0;color:#04140a;font-weight:700;background:var(--green);border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;font-size:14px;top:11px}
+.bonus img{border-radius:18px;box-shadow:0 20px 50px #0008}
+.cap{font-size:14px;color:#9a9a9a;margin-top:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.price{background:radial-gradient(700px 400px at 50% 0,#0d5a2b55,transparent 70%),var(--navy);color:#EDEDED;text-align:center}
+.price h2{margin-inline:auto}.price p{margin-inline:auto;color:#b5b5b5}
+.old{font-size:22px;color:#8a8a8a;text-decoration:line-through;text-decoration-thickness:2px;margin-top:26px}
+.old small{color:#9a9a9a;text-decoration:none;display:inline-block;margin-left:8px;font-size:15px}
+.opts{display:grid;grid-template-columns:1.15fr 1fr;gap:22px;max-width:820px;margin:26px auto 0;align-items:stretch}
+.opt{border:1px solid #ffffff2e;border-radius:18px;padding:30px 22px;background:#ffffff0d}
+.opt.main{border:2px solid var(--green);background:#dcdcdc;position:relative}
+.opt .l{font-size:16px;color:#b5b5b5}
+.opt .v{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,60px);color:#fff;line-height:1.1;margin:8px 0}
+.opt.main .v{color:#0b6b2e}.opt.main .l,.opt.main .s{color:#2a2a2a}
+.opt .s{font-size:15px;color:#9a9a9a}
+.badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--green);color:#04140a;font-weight:600;font-size:14px;padding:4px 14px;border-radius:99px;white-space:nowrap}
+.save{margin:30px auto 0;font-size:19px}
+.save b{color:var(--gold)}
+.inc{list-style:none;padding:0;margin:26px auto 0;display:inline-block;text-align:left}
+.inc li{padding:4px 0}
+.inc li::before{content:"✓ ";color:var(--green);font-weight:700}
+.go{margin-top:34px}
+#ok{display:none;margin:26px auto 0;max-width:560px;background:#19a4632b;border:1px solid var(--green);border-radius:14px;padding:18px 22px;text-align:left}
+#ok.on{display:block}
+footer{background:#000;color:#7d7d7d;text-align:center;padding:30px 24px;font-size:14px}
+@media (max-width:860px){.cmp,.grid,.two,.opts,.bonus .split{grid-template-columns:1fr}section{padding:60px 0}.win{height:420px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.opt{font:inherit;color:inherit;text-align:center;cursor:pointer;width:100%;transition:transform .15s,border-color .15s}
+.opt:hover{transform:translateY(-3px);border-color:var(--green)}
+.opt:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.opt .badge{display:none}.opt.main .badge{display:block}
+.note{background:#000;border-top:1px solid var(--line);padding:36px 0;text-align:center}
+.note p{margin:0 auto;color:#b5b5b5;font-size:15px}.note b{color:var(--green)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<span class="for">Proposta exclusiva · Negrão Granato Advogados Associados</span>
+<h1>21 anos de credibilidade merecem <span style="color:var(--green)">um site à altura.</span></h1>
+<p>Um novo site no seu domínio, um brinde para o link da bio do Instagram e apoio para o escritório ser encontrado no Google. Veja como a sua página pode ficar.</p>
+<a class="btn" href="#preco">Ver a condição especial</a> <a class="btn" style="background:transparent;color:var(--green);border:1px solid var(--green);box-shadow:none;margin-left:10px" href="https://wa.me/5548991575011?text=Ol%C3%A1!%20Vi%20a%20proposta%20do%20novo%20site%20do%20escrit%C3%B3rio%20Negr%C3%A3o%20Granato%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a>
+</div>
+</header>
+
+<section id="antes-depois">
+<div class="wrap">
+<h2>O mesmo escritório, duas primeiras impressões</h2>
+<p class="lead">Quem chega por um post ou pelo Google decide em segundos se confia. Role dentro de cada janela e compare.</p>
+<div class="cmp">
+<div class="col">
+<span class="tag a">Antes</span>
+<h3>O site de hoje</h3>
+<p style="color:var(--muted);font-size:16px">Visual de modelo pronto, muito texto corrido e nenhum caminho claro para agendar uma conversa.</p>
+<div class="browser"><div class="bar"><i></i><i></i><i></i><span>negraogranato.com.br</span></div><div class="win" tabindex="0" aria-label="Site atual, role para ver"><img src="imagens/site-antigo.jpg" alt="Site atual do escritório Negrão Granato"></div></div>
+</div>
+<div class="col new">
+<span class="tag b">Depois</span>
+<h3>O novo site</h3>
+<p style="color:var(--muted);font-size:16px">Primeira dobra forte, números de confiança, áreas de atuação e botão de contato em cada etapa da página.</p>
+<div class="browser"><div class="bar"><i></i><i></i><i></i><span>negraogranato.com.br</span></div><div class="win" tabindex="0" aria-label="Novo site, role para ver"><img src="imagens/site-novo.jpg" alt="Novo site proposto para o escritório"></div></div>
+</div>
+</div>
+<p class="hint">Dica: no celular, deslize dentro da janela para percorrer a página inteira.</p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2>O que um site no seu domínio muda nas redes sociais</h2>
+<p class="lead">Advogado é escolhido por confiança. Cada vez que alguém clica no seu perfil, o que aparece depois do clique pesa na decisão.</p>
+<div class="grid">
+<div class="card"><div class="ic">🔗</div><h3>Link da bio com autoridade</h3><p>Um endereço próprio, como negraogranato.com.br, passa mais segurança do que links soltos ou páginas de terceiros.</p></div>
+<div class="card"><div class="ic">📲</div><h3>Pensado para quem vem do celular</h3><p>O Instagram abre quase tudo no celular. O novo site foi desenhado para ler bem e levar direto ao contato.</p></div>
+<div class="card"><div class="ic">🎯</div><h3>Cada post leva a uma ação</h3><p>Quem se interessa pelo conteúdo encontra botão de agendamento e WhatsApp, em vez de desistir no meio do caminho.</p></div>
+<div class="card"><div class="ic">🏛️</div><h3>Imagem à altura do escritório</h3><p>Seu perfil conta uma história de 21 anos. O site precisa contar a mesma, com a mesma qualidade.</p></div>
+<div class="card"><div class="ic">🏠</div><h3>Um endereço que é seu</h3><p>O público passa a chegar a uma página que você controla, e não depende só do alcance de uma rede social.</p></div>
+<div class="card"><div class="ic">🔎</div><h3>Base para aparecer no Google</h3><p>Um site organizado, com seu domínio e textos claros, é o ponto de partida para ser encontrado em buscas.</p></div>
+</div>
+</div>
+</section>
+
+<section class="bonus">
+<div class="wrap split">
+<div>
+<span class="gift">🎁 Bônus grátis ao fechar o novo site</span>
+<h2>Uma página de link da bio, pronta para o Instagram</h2>
+<p>Em vez de um link só, o seu perfil passa a ter uma página organizada, com a cara do escritório, onde o cliente encontra tudo em um toque:</p>
+<ul>
+<li>Localização do escritório no mapa</li>
+<li>Link direto para o novo site</li>
+<li>Links para todas as suas redes sociais</li>
+<li>Botão de agendamento e WhatsApp</li>
+</ul>
+<p style="margin-top:20px"><b style="color:var(--gold)">Já incluído no valor inicial de R$ 3.127.</b> Para você, sai sem custo extra.</p>
+</div>
+<div>
+<img src="imagens/bonus-link-na-bio.jpg" alt="Exemplo de página de link da bio: formato antigo e novo formato">
+<p class="cap">Exemplo de modelo do formato. A sua página usará a identidade visual do escritório.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>Depois do site, a gente continua ao seu lado</h2>
+<p class="lead">Ao fechar, também podemos ajudar o escritório a ser mais encontrado e lembrado.</p>
+<div class="two">
+<div class="card"><div class="ic">📍</div><h3>Google Meu Negócio</h3><p>Melhorar o posicionamento do escritório quando alguém busca por advogado na sua região: perfil completo, fotos, horários, mapa e avaliações organizadas.</p></div>
+<div class="card"><div class="ic">📱</div><h3>Redes sociais</h3><p>Ajustar bio, link e apresentação dos perfis para que tudo conduza ao novo site e ao contato, com o mesmo padrão visual.</p></div>
+</div>
+</div>
+</section>
+
+<section class="price" id="preco">
+<div class="wrap">
+<h2>Sua condição especial</h2>
+<p>Site novo no seu domínio mais o bônus da página de link da bio.</p>
+<div class="old">De R$ 3.127 <small>site + bônus</small></div>
+<p style="margin-top:22px;font-size:15px">Escolha a forma de pagamento</p>
+<div class="opts" role="radiogroup" aria-label="Forma de pagamento">
+<button type="button" class="opt main" data-k="vista" role="radio" aria-checked="true"><span class="badge">✓ Escolhida</span><div class="l">Por apenas, à vista</div><div class="v">R$ 987,00</div><div class="s">pagamento único</div></button>
+<button type="button" class="opt" data-k="parc" role="radio" aria-checked="false"><span class="badge">✓ Escolhida</span><div class="l">Ou parcelado em até</div><div class="v">12x R$ 105,00</div><div class="s">sem complicação</div></button>
+</div>
+<p class="save">Você economiza <b id="sv">R$ 2.140</b> em relação ao valor inicial.</p>
+<ul class="inc">
+<li>Novo site completo no seu domínio</li>
+<li>Versão pensada para o celular</li>
+<li>Bônus: página de link da bio do Instagram</li>
+</ul>
+<div class="go"><a class="btn" id="cta" href="https://wa.me/5548991575011?text=Ol%C3%A1!%20Vi%20a%20proposta%20do%20novo%20site%20do%20escrit%C3%B3rio%20Negr%C3%A3o%20Granato%20e%20quero%20fechar%20com%20a%20condi%C3%A7%C3%A3o%20especial%20%C3%A0%20vista%20(R%24%20987%2C00)." target="_blank" rel="noopener">Quero fechar à vista</a></div>
+</div>
+</section>
+
+<div class="note"><div class="wrap"><p><b>Sobre a hospedagem:</b> a hospedagem, onde o site do cliente ficará no ar, é paga pelo próprio cliente, conforme o pacote que ele escolher. Enviaremos as opções disponíveis pelo seu WhatsApp.</p></div></div>
+<footer>Proposta preparada para Negrão Granato Advogados Associados</footer>
+
+
+<script>
+(function(){
+var N='5548991575011',B='Olá! Vi a proposta do novo site do escritório Negrão Granato e quero fechar ';
+var P={vista:{t:'com a condição especial à vista (R$ 987,00).',s:'R$ 2.140',b:'Quero fechar à vista'},parc:{t:'parcelado em até 12x de R$ 105,00.',s:'R$ 1.867',b:'Quero fechar em até 12x'}};
+var opts=document.querySelectorAll('.opt'),cta=document.getElementById('cta'),sv=document.getElementById('sv');
+function pick(k){opts.forEach(function(o){var on=o.dataset.k===k;o.classList.toggle('main',on);o.setAttribute('aria-checked',on)});sv.textContent=P[k].s;cta.textContent=P[k].b;cta.href='https://wa.me/'+N+'?text='+encodeURIComponent(B+P[k].t)}
+opts.forEach(function(o){o.addEventListener('click',function(){pick(o.dataset.k)})});
+})();
+</script>
+</body>
+</html>
